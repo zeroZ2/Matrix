@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class="main">
+		<div class="borde borde-ini">Café <i class="fas fa-ice-cream"></i>
+		</div>
+		<div class="borde borde-ini borde-fin"></div>
+		{% for producto in productos %}
+	 		<div class="ContenedorGG">
+	 			<h3>{{producto.nombre_prod}}</h3>
+	 			{% with ''|add:producto.image_url|add:'' as image_static %}
+	 				{% load static %}
+	 			<img src="{% static image_static %}" class="ProdG">
+	 			{% endwith %}
+	 			<div class="Text-R">{{producto.descripcion}}</div>
+	 			<div class="PrecG"><a href="#">s/ {{producto.precio_unitario}}</a></div>
+	 		</div>
+ 		{% endfor %}
+ 		<div class="borde borde-ini borde-fin"></div>
+	</div>
+{% endblock %}

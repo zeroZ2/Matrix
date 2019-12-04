@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+div #imgInit{
+	overflow: hidden;
+	width: 100%;
+	height: 200px;
+
+}
+.logo-cabezera{
+	font-family: 'Pacifico', cursive;
+	font-size: 70px;
+	text-align: center;
+	height: 200px;
+	padding: 20px;
+	background-image: url('http://www.hdfondos.org/file/22006/728x410/16:9/granos-de-cafe_1778660619.jpg');
+	color: #fff;
+	cursor: default;
+	transition: 2s ease all;
+}
+.logo-chico{
+	font-family: 'Pacifico', cursive;
+	display: inline-block;
+	font-size: 20px;
+	padding: 4px;
+	margin-right: 50px;
+	color: #cd5700;
+	cursor: pointer;
+}
+.nav{
+	float: left;
+	width: 100%;
+	background: black;
+	color: white;
+	padding: 0 20px;
+	transition: 0.3s ease all;
+	backface-visibility: hidden;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	z-index: 7;
+}
+.nav .wrap{
+	position: relative;
+	left: -180px;
+	transition: 0.4s ease all;
+}
+nav{
+	display: inline-block;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+nav li{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+nav a{
+	display: block;
+	padding: 20px;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	transition: 0.4s ease all;
+}
+nav a:hover{
+	color: white;
+	background: #cd5700;
+}
+.main{
+	word-wrap: break-word;
+	width: 100%;
+	padding: 0;
+}
+body.nav-fixed .nav{
+	position: fixed;
+	top: 0;
+}
+body.nav-fixed .nav .wrap{
+	left: 0;
+}
+
+.btn-menu{
+	width: 50px;
+	height: 50px;
+	padding: 16px;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #cd5700;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	transition: all 500ms cubic-bezier(1,0,0,1);
+	transform: translateX(100px);
+}
+.btn-menu:hover{
+	transform: scale(1.2);
+	background: #ff6d01;
+}
+.contenedor-slider {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.pie{
+	text-decoration: none;
+	background: #4e3b31;
+	text-align: center;
+	color: #fff;
+}
+footer .miniMenu-P p{
+	margin-top: 40px;
+	font-size: 13px;
+}
+footer .miniMenu-P .fab{
+	font-size: 2vw;
+	padding: 20px;
+	color: #fff;
+}
+footer .cuadro-pie{
+	height: 30px;
+	width: 100%;
+
+}
+#pie-DR{
+	font-size: 10px;
+}
+footer .miniMenu-P .fab:hover{
+	background: #624a3d;
+}
+/*-------------Responsive----------*/
+@media (min-width: 800px){
+	.nav .wrap nav ul li a i{
+		display: none;
+}
+}
+@media (max-width: 800px){
+
+	.btn-menu{
+		transform: translateX(0px);
+	}
+	.logo-cabezera{
+		display: none;
+	}
+	.nav{
+		width: 70%;
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		padding: 0px;
+		transform: translateX(-100%);
+	}
+	.nav .wrap{
+		left: 0;
+	}
+	nav{
+		width: 100%;
+		position: absolute;
+		top: 60px;
+	}
+	nav li{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	.logo-chico{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	nav a{
+		width: 100%;
+		display: block;
+		padding: 20px;
+		margin: 0;
+	}
+	.nav-menuR{
+		transition: all 300ms cubic-bezier(1,0,0,1);
+		transform: translateX(0%);
+		z-index: 7;
+	}
+	footer .miniMenu-P .fab{
+	font-size: 4vw;
+	}
+
+}

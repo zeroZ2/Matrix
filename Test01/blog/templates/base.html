@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+	<link rel="stylesheet" href="{% static 'css/estiloProd.css' %}">
+
+	<script src="https://kit.fontawesome.com/0ed2ab3a05.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="{% static 'css/estiloLogin.css' %}">
+
+</head>
+<body>
+	<div class="logo logo-cabezera">Coffee-World <i class="fas fa-coffee ico-coffe"></i></div>
+	<div class="nav">
+		<div class="wrap">
+			<div class="logo logo-chico">Coffee-World <i class="fas fa-coffee ico-coffe"></i></div>
+			<nav>
+				<ul>
+					<li><a href="/loginC"><i class="fas fa-home"></i> Inicio</a></li>
+					<li><a href="/productosListC"><i class="fas fa-mug-hot"></i> Productos</a></li>
+					<li><a href="#"><i class="fas fa-images"></i> Galeria</a></li>
+					<li><a href="#"><i class="fas fa-address-book"></i> Contactenos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	{% block content %}
+	{% endblock %}
+	<footer>
+		<div class="contenedor-slider pie">
+			<div class="cuadro-pie"></div>
+			<p>Visitanos</p>
+			<div class="miniMenu-P">
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fab fa-twitter-square"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-whatsapp"></i></a>
+			</div>
+			<br>
+			<p id="pie-DR">© 2019</p>
+			<br>
+		</div>
+	</footer>
+	<i class="fas fa-ellipsis-v btn-menu"></i>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

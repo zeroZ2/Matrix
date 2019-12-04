@@ -1,0 +1,48 @@
+
+.borde{
+	position: relative;
+	width: 25%;
+	float: left;
+}
+.borde-ini{
+	width: 100%;
+	height: 80px;
+	font-family: 'Pacifico', cursive;
+	font-size: 5vw;
+	text-align: center;
+}
+.borde-fin{
+	height: 20px;
+}
+.cuadroB{
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+.gal-lol{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 800px) {
+	.main .borde .cuadroB{
+	-webkit-transition:all 1.5s ease;
+	}
+	.main .borde .cuadroB:hover{
+		transform: scale(1.3);
+		z-index: 5;
+	}
+}
+@media (max-width: 800px){
+	.borde-ini{
+		font-size: 7vw;
+		height: 20px;
+	}
+	.borde{
+		width: 100%;
+		margin-top: 20px;
+	}
+}

@@ -16,6 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf import settings
+from django.conf.urls import include, url
+from django.conf.urls.static import static
+from blog import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+	path('base/',views.base,name='base'),
+    path('inicio/',views.inicio,name='inicio'),
+    path('inicioE/<id_em>/',views.inicioE,name='inicioE'),
+    path('registrarCliente/',views.registrarCliente,name='registrarCliente'),
+    path('loginC/',views.loginC,name='loginC'),
+    path('loginE/',views.loginE,name='loginE'),
+    path('productosListC/<id_clien>/',views.productosListC,name='productosListC'),
 ]

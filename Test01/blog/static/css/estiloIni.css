@@ -1,0 +1,127 @@
+
+.borde{
+  background-image: url('https://image.freepik.com/foto-gratis/material-fondo-textura-tablon-madera_53876-31377.jpg');
+  width: 100%;
+  height: 100px;
+}
+.Bfn{
+  background-image: url('https://image.freepik.com/foto-gratis/material-fondo-textura-tablon-madera_53876-31377.jpg');
+  height: 50px;
+}
+.mid{
+  height: 50px;
+}
+.img-lol{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.slider {
+  display: flex;
+  width: 400%;
+}
+
+.slider__section {
+  width: 100%;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-prev, .btn-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background: white;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+@keyframes rotate {
+  0% {transform: rotate(370deg);}
+  50% {transform: rotate(350deg);}
+  50% {transform: rotate(350deg);}
+  100% {transform: rotate(370deg);}
+}
+.ContenedorGG{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  position: relative;
+  width: 50%;
+  height: auto;
+  background-image: url('https://st.depositphotos.com/2977189/4860/i/950/depositphotos_48607621-stock-photo-brown-checkered-fabric-closeup-tablecloth.jpg');
+  float: left;
+}
+.ContenedorGG h3{
+  margin-top: 4vw;
+  margin-left: 10vw;
+  -webkit-text-stroke: 1px black;
+  font-family: 'Bangers', cursive;
+  color: #fff;
+  font-size: 3vw;
+  position: absolute;
+  z-index: 3;
+}
+.ContenedorGG .ProdG{
+  margin: 1%;
+  width: 60%;
+  animation: 5s rotate ease-in-out infinite;
+  transform-origin: 50% 50%;
+  z-index: 1;
+}
+.ContenedorGG .PrecG{
+  margin-left: 5vw;
+  width: 18%;
+  margin-bottom: 2vw;
+}
+.ContenedorGG .ProdC{
+  margin-left: 20vw;
+  font-size: 5vw;
+}
+.CGGC{
+  background-image: url('https://previews.123rf.com/images/pixelrobot/pixelrobot1504/pixelrobot150400356/38259605-rouge-et-blanc-nappe-%C3%A0-carreaux-fond-.jpg');
+}
+@media (max-width: 800px){
+  .borde-ini{
+    height: 50px;
+  }
+  .ContenedorGG{
+    width: 100%;
+    border-left: 0;
+  }
+  .ContenedorGG h3{
+    margin-top: 6vw;
+    margin-left: 15vw;
+    font-size: 6vw;
+  }
+  .ContenedorGG .PrecG{
+  margin-left: 9vw;
+  width: 20%;
+  }
+  .ContenedorGG .ProdC{
+  margin-left: 40vw;
+  font-size: 10vw;
+}
+}
